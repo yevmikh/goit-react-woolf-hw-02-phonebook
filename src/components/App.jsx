@@ -10,11 +10,6 @@ export class App extends Component {
     filter: '',
   };
 
-  handleContactChange = e => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
-  };
-
   handleContactSubmit = contact => {
     const { contacts } = this.state;
     const sameContact = contacts.find(
